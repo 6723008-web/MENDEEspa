@@ -1,0 +1,51 @@
+// top navbar
+.navbar-brand a {
+  p {
+    color: #d309c5;
+    font-size: 1rem;
+  }
+  span {
+    color: #0ee619;
+  }
+}
+
+.navbar-end a {
+  color: #ae94ac;
+}
+
+.app-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* дээр харагдахаар */
+  background-color: #6d1be9; /* эсвэл өөр өнгө */
+}
+
+.app-shadow {
+  box-shadow: 0 2px 8px rgba(4, 111, 2, 0.15);
+}
+
+.navbar-brand .image img {
+  max-width: 64px;
+  height: auto;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* зураг, текстийн хооронд зай */
+}
+
+// Цэсийг баруун тал руу зэрэгцүүлэх. Navbar.js-д .app-top-navbar классыг ашигласан.
+.app-top-navbar-right {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+// лого арын өнгө цагаан тул hover хийх үед ялгарч харагдахгүй болгов.
+.navbar-brand .app-logo:hover,
+.navbar-brand .app-logo:focus,
+.navbar-brand .app-logo:active {
+  background-color: transparent;
+  color: inherit;
+  box-shadow: none;
+}
